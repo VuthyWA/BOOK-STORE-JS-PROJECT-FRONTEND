@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/hower.css">
+</head>
+<body>
+    <div class="bodycontainer">
+        <div class="header">
+            <img src="images/logo.png" alt="logo">
+            <h1>Helper</h1>
+        </div>
+        <div class="container">
+            <div class="itemcontainer">
+                <div class="InputArea">
+                    <div class="banner">
+                        <h1>PNC LIBRARY</h1>
+                    </div>
+                    <div class="formcontainer">
+                        <div class="textinfo">
+                            <p>Book Title:</p>
+                            <p>Author:</p>
+                            <p>Description:</p>
+                            <p>Price:</p>
+                            <p>Published date:</p>
+                            <p>Purchase date:</p>
+                            <p>Category:</p>
+                        </div>
+                        <div class="inputfields">
+                            <input type="text" id="book" >
+                            <input type="text" id="author" >
+                            <textarea name="bookdescription" id="bookdescription" cols="20" rows="3"></textarea>
+                            <input type="number" id="price">
+                            <input type="date" id="published_date">
+                            <input type="date" id="purchase_date">
+                            <div class="majors">
+                                <div class="color_major"></div>
+                                <select name="booktype" id="category">
+                                    <option value="IT">IT Book</option>
+                                    <option value="English">English book</option>
+                                    <option value="Funny">Funny​​​​​ book</option>
+                                  </select>
+                            </div>
+                            <div class="check_date">Purchase date must be after published date</div>
+                        </div>
+                        
+                    </div>
+                    <div class="buttons">
+                        <button id="addBtn" class="hvr-push">Add+</button>
+                        <button id="updateBtn">Update</button>
+                        <button id="createBtn">Create</button>
+                        <button id="cancelBtn" class="hvr-push">cancel</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="Result_container">
+                    <div class="result_text">Result</div>
+                    <div class="change_layout">
+                        <button id="byname" class="hvr-push">BY NAME</button>
+                        <button id="bycategory" class="hvr-push">BY CATEGORY</button>
+                    </div>
+                    <div class="bookstore">
+                        <div class="searchbar">
+                            <input type="text" id="search" placeholder='Search Book....' >
+                        </div>
+                        <div class="check_price">
+                            <div class="minprice">
+                                <p>Min Price: </p>
+                                <input type="number" id="minprice">
+                            </div>
+                            <div class="maxprice">
+                                <p>Max Price: </p>
+                                <input type="number" id="maxprice">
+                            </div>
+                        </div>
+                        <h2 class="title">Books to read</h2>
+                        <div class="itemlist">
+                                <div class="librarycontainer">
+                                    <div class="ITbook">
+                                            <div class="content">IT books</div>
+                                            <div class="main_data">
+                                                <div class="data">
+                                                    <div class="top_info">
+                                                        <div class="color_area"></div>
+                                                        <span id="bookName">PHP</span>
+                                                        <span >Rady</span>
+                                                        <span id="bookprice">10</span>
+                                                        <span >$</span>
+                                                    </div>
+                                                    <div class="icon">
+                                                        <span class="fa fa-edit" id="editbutton"></span>
+                                                        <span class="fa fa-close" id="deletebutton"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="date">
+                                                    <span >2021-04-09</span>
+                                                    <span >2021-04-07</span>
+                                                </div>
+                                                <div class="description">
+                                                    PHP is a programming the most language that web
+                                                     developer alwasys use to build backend system
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="Englishbook">
+                                        <div class="content">English books</div>
+                                
+                                    </div>
+                                    <div class="Funnybook">
+                                        <div class="content">Funny books</div>
+
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script src="js/app.js"></script>
+</html>
